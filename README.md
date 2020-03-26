@@ -5,6 +5,8 @@
 
 移动端向服务器不同Topic传输数据，盒子硬件订阅该主题。如此，盒子即能收到移动端发送的数据，实现数据的双向通讯。
 
+Arduino code updated！
+
 Box-show
 
 <img src="show/box.png" alt="box"/>
