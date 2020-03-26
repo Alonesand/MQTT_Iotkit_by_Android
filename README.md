@@ -1,5 +1,5 @@
 # MQTT_Iotkit_by_Android
-![img](file:///C:/Users/zzx/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](show/framework.png)
 
 功能设计：客户端硬件上传温湿度数据到MQTT数据平台的Topic，通过Arduino作为硬件进行编程，Json格式打包数据，移动端核对IP地址，端口号以及必要的账号密码后绑定Topic主题完成订阅，收到硬件发送的Json格式数据，安卓端再对Json格式文件进行解析，拿到数据包详细信息，制作图表显示。
 
