@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/mqtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MQTT"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/mqtt">
+        <EditText
+            android:id="@+id/ip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="填写地址"/>
+
+        <EditText
+            android:id="@+id/port"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:hint="填写端口号"/>
+        <EditText
+            android:id="@+id/sub"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="订阅主题"/>
+        <EditText
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="填写用户名"/>
+        <EditText
+            android:id="@+id/psd"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="填写密码"/>
+        <CheckBox
+            android:id="@+id/iprem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="记住密码"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/connect"
+            android:layout_marginTop="45dp"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="连接"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
